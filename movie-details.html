@@ -37,7 +37,7 @@
       <div class="overlay" data-overlay></div>
 
       <a href="./index.html" class="logo">
-        <img src="./assets/images/logo.svg" alt="Filmlane logo">
+        <h1>FBest Movies</h1>
       </a>
 
       <div class="header-actions">
@@ -46,7 +46,7 @@
           <ion-icon name="search-outline"></ion-icon>
         </button>
 
-        <div class="lang-wrapper">
+        <!-- <div class="lang-wrapper">
           <label for="language">
             <ion-icon name="globe-outline"></ion-icon>
           </label>
@@ -57,7 +57,7 @@
             <option value="ar">AR</option>
             <option value="tu">TU</option>
           </select>
-        </div>
+        </div> -->
 
         <button class="btn btn-primary">Sign in</button>
 
@@ -232,15 +232,20 @@
                 <p class="text">Streaming Channels</p>
               </div>
 
-              <button class="btn btn-primary">
+              <button class="btn btn-primary play" onclick="playfunction()">
                 <ion-icon name="play"></ion-icon>
-
+                
                 <span>Watch Now</span>
               </button>
 
+              <div class="video-box" id="video-box">
+                <button class=" btn btn-primary close" onclick="closefunction()" >X</button>
+                <video src="./assets/vid/Free Guy _ Official Trailer _ 20th Century Studios.mp4"  id="my-video" controls ></video>
+              </div>
+ 
             </div>
 
-            <a href="./assets/images/movie-4.png" download class="download-btn">
+            <a href="./assets/vid/Free Guy _ Official Trailer _ 20th Century Studios.mp4" download class="download-btn">
               <span>Download</span>
 
               <ion-icon name="download-outline"></ion-icon>
@@ -435,9 +440,10 @@
 
         <div class="footer-brand-wrapper">
 
-          <a href="./index.html" class="logo">
-            <img src="./assets/images/logo.svg" alt="Filmlane logo">
-          </a>
+           <a href="./index.html" class="logo">
+           <!-- <img src="/favicon.svg" alt="favicon"> -->
+           <h1>FBest Movies</h1>
+           </a>
 
           <ul class="footer-list">
 

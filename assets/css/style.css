@@ -497,7 +497,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .hero {
-  background: url("../images/hero-bg.jpg") no-repeat;
+  background: url("../images/black.webp") no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 750px;
@@ -672,6 +672,30 @@ body.active { overflow: hidden; }
 .service-card .card-title { margin-bottom: 10px; }
 
 
+.video-box{
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  transform: translate(10%,25%);
+  visibility: hidden;  
+}
+
+
+#video-box .close{
+  /* position:absolute; */
+  font-size: medium;
+  font-weight: 700;
+  margin:  0 0 0 1212px; 
+  /* color: red; */
+}
+
+
+#video-box .close:hover{
+  cursor: pointer;
+
+}
+
 
 
 
@@ -692,6 +716,7 @@ body.active { overflow: hidden; }
   gap: 15px;
   margin-bottom: 50px;
 }
+
 
 .top-rated .filter-btn {
   position: relative;
@@ -1064,6 +1089,8 @@ body.active { overflow: hidden; }
 
 
 
+
+
 /*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1071,7 +1098,7 @@ body.active { overflow: hidden; }
 /**
  * responsive for large than 550px screen
  */
-
+ 
 @media (min-width: 550px) {
 
   /**
@@ -1105,7 +1132,6 @@ body.active { overflow: hidden; }
     grid-template-columns: 1fr 1fr;
     gap: 60px 30px;
   }
-
 
 
   /**
@@ -1201,7 +1227,7 @@ body.active { overflow: hidden; }
     gap: 35px;
   }
 
-  .header-actions .btn-primary { display: none; }
+  .header-actions .btn-primary { display: block; }
 
   .search-btn {
     position: relative;
@@ -1334,8 +1360,6 @@ body.active { overflow: hidden; }
   /* MOVIE CARD */
 
   .movies-list { grid-template-columns: repeat(3, 1fr); }
-
-
 
   /**
    * HEADER
@@ -1503,6 +1527,10 @@ body.active { overflow: hidden; }
     --fs-1: 60px;
     --fs-4: 26px;
 
+  }
+
+  form #search {
+    display: block;
   }
 
 

@@ -50,3 +50,25 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
 
 });
+
+
+let playBtn = document.querySelector('.play');
+let closeBtn = document.querySelector('.close');
+let video =document.querySelector('.video-box');
+let myVideo =document.querySelector('#my-video');
+
+
+
+playBtn.addEventListener('click' , playfunction);
+closeBtn.addEventListener('click' , closefunction);
+
+function playfunction(){
+  video.style.visibility ='visible'
+  myVideo.play();
+}
+
+function closefunction(){
+  video.style.visibility ='hidden'
+  myVideo.pause();
+}
+
