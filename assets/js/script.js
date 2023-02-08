@@ -86,22 +86,25 @@ let search_value;
 
 
 function gh() {
+    
     return search_value = document.getElementById('search').value;
 }
 
-function findmovies() {
+(function findmovies() {
     movies.forEach((movie) => {
         const name = movie.title;
-        let count = 0;
-        name.forEach((character) => {
-            gh().forEach((charact) => {
+        let i = 0;
+        for(let character of gh()) {
+            console.log(i);
+            for(let charact of name)  {
                 if (charact === character) {
+                    i+=1;
                     console.log(charact);
                 }
-            })
-        })
+            }
+        }
     })
-}
+})
 
 setInterval(gh, 100);
 
