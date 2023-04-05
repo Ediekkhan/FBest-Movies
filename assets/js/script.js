@@ -1,4 +1,3 @@
-// 'use strict';
 
 /**
  * navbar variables
@@ -43,8 +42,8 @@ window.addEventListener("scroll", function () {
         : goTopBtn.classList.remove("active");
 });
 
-//Chisoms code from here
 
+// function drizzy()
 class movie {
     constructor(title, image, year) {
         this.title = title;
@@ -113,7 +112,8 @@ function generate_results(){
 
 setInterval(gh, 100);
 
-//Chisom code ends here
+//function drizzy_is_vexed_here()
+//function kanex()
 
 let playBtn = document.querySelector(".play");
 let closeBtn = document.querySelector(".close");
